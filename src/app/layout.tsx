@@ -5,8 +5,10 @@ export const metadata: Metadata = {
   description: '사이트 설명',
 };
 
+type Props = {children: React.ReactNode};
+
 export default function RootLayout(
-  { children } : Readonly<{children: React.ReactNode}>
+  { children } : Props
 ) {
 
   return (

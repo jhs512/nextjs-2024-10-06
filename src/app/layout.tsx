@@ -1,21 +1,16 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: '사이트 제목',
-  description: '사이트 설명',
+  title: "사이트 제목",
+  description: "사이트 설명",
 };
 
-type Props = {children: React.ReactNode};
+type Props = { children: React.ReactNode };
 
-export default function RootLayout(
-  { children } : Props
-) {
-
+export default function RootLayout({ children }: Props) {
   return (
     <html lang="ko">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
